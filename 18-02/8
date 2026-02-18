@@ -1,0 +1,19 @@
+
+#include<stdio.h>
+int main(){
+    int day_num;
+    scanf("%d",&day_num);
+
+    if(day_num<=5&&day_num>=1){
+        printf("Week day");
+    }
+    
+    else if (day_num==6||day_num==7){
+        printf("Week end");
+    }
+
+    else{
+        printf("invalid");
+    }
+    return 0;
+}
