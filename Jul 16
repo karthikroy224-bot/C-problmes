@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int arr[] = {23, 45, 82, 12, 99, 4, 56};
+    int length = sizeof(arr) / sizeof(arr[0]); 
+    int max = arr[0]; 
+    
+    for (int i = 1; i < length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    
+    printf("The largest element in the array is: %d\n", max);
+    return 0;
+}
